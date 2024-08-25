@@ -24,7 +24,10 @@ const UserSchema = new mongoose.Schema(
     },
     profileImage: {
       type: String,
-      required: true,
+    },
+    isAdmin: {
+      type: Boolean,
+      default: false,
     },
     orderHistory: [
       {
