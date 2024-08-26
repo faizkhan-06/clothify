@@ -44,9 +44,6 @@ const OrderSchema = new mongoose.Schema(
       default: "processing",
       enum: ["processing", "shipped", "delivered"],
     },
-    trackingNumber: {
-      type: String,
-    },
   },
   {
     timestamps: true,
